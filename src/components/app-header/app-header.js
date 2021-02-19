@@ -7,8 +7,7 @@ const AppHeader = () => {
         <Navbar bg="dark" variant="dark">
             <Container className="justify-content-start">
                 <Link className="mr-3" to="/">BanksManagement</Link>
-                <Link to="/">Mortgage calculator</Link>
-                <i className="bi bi-pencil"></i>
+                <Link to="/calculator/">Mortgage calculator</Link>
             </Container>
         </Navbar>
     )

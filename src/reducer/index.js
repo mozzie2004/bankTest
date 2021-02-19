@@ -29,6 +29,13 @@ const reducer = (state=initialState, action) => {
             error: true
         }
 
+        case 'REMOVE-BANK':
+            const index = state.banks.findIndex(item=>item.id === action.id)
+        return {
+            ...state,
+            banks: [...state.banks.slice(0, index), ...state.banks.slice(index+1)]
+        }
+
         default:
         return {
             ...state

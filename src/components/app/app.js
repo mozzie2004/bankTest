@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom'
 import BanksManagement from '../banks-management/banks-management';
 import AppHeader from '../app-header/app-header';
 import AddBank from '../add-bank/add-bank';
-;
+import Calculator from '../calculator/calculator';
 
 const App = () => {
 
@@ -15,6 +15,9 @@ const App = () => {
             </Route>
             <Route path='/add-bank/:id'>
                 <AddBank/>
+            </Route>
+            <Route path='/calculator/'>
+                <Calculator/>
             </Route>
         </>
     )

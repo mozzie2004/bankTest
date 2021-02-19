@@ -17,9 +17,16 @@ const banksError = ()=>{
     }
 }
 
+const removeBank = (id) => {
+    return {
+        type: 'REMOVE-BANK',
+        id
+    }
+}
 
 export {
     banksLoaded,
     banksRequested,
-    banksError
+    banksError,
+    removeBank
 }
