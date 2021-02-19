@@ -85,11 +85,11 @@ const Calculator = ({banks, banksLoaded, banksRequested, loading}) => {
                 <Form onSubmit={onSubmit}>
                     <Form.Group controlId="initial">
                         <Form.Label>Initial loan</Form.Label>
-                        <Form.Control onChange={onChangeLoan} value={initialLoan} required type="text" />
+                        <Form.Control pattern="[0-9]{1,}" onChange={onChangeLoan} value={initialLoan} required type="text" />
                     </Form.Group>
                     <Form.Group controlId="downPayment">
                         <Form.Label>Down payment</Form.Label>
-                        <Form.Control onChange={onChangeDownPayment} value={downPayment} required type="text" />
+                        <Form.Control pattern="[0-9]{1,}" onChange={onChangeDownPayment} value={downPayment} required type="text" />
                     </Form.Group>
                     <Form.Group controlId="bank">
                         <Form.Label>Choose bank</Form.Label>
